@@ -1,0 +1,18 @@
+*gpg_qp.txt*  Decode Quoted-Printable text
+
+Author:  François Vantomme <akarzim@pm.me>
+License: Same terms as Vim itself (see |license|)
+
+Decode Quoted-Printable text in ASC files. Relies on g:decodeqp_command which
+can be customized, otherwise a Perl regexp will be used.
+
+                                                *gcp*
+gcp                     Decode the whole file.
+
+                                                *v_gcp*
+{Visual}gcp             Decode the highlighted lines.
+
+                                                *:DecodeQP*
+:[range]DecodeQP        Decode [range] lines. Defaults to the whole file.
+
+ vim:tw=78:et:ft=help:norl:
