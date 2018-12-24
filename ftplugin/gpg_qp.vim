@@ -1,6 +1,11 @@
 " gpg_qp.vim - Decode quoted-printable text
 " Maintainer:   François Vantomme <akarzim@pm.me>
-" Version:      0.4
+" Version:      0.5
+
+if exists("g:loaded_decodeqp") || v:version < 700
+  finish
+endif
+let g:loaded_decodeqp = 1
 
 if !exists("g:decodeqp_command")
   let g:decodeqp_command = 'perl -p -e ''s/=\n//m;s/=([\dA-F]{2})/pack H2,$1/gie'''
