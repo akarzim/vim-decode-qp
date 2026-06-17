@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Moved to [Codeberg](https://codeberg.org/akarzim/vim-decode-qp)
+
 # vim-decode-qp
 
 Decode Quoted-Printable text
